@@ -353,7 +353,7 @@
             <div class="space-y-4 text-xs leading-relaxed">
                 <div class="p-3 border-l-4 border-emerald-600 bg-emerald-50/50 rounded">
                     <h3 class="font-bold text-sm text-emerald-800 mb-1">1. Alur Pengelolaan Data Pegawai & Penyesuaian Role (Guru Mapel / BK / Tendik)</h3>
-                    <p>Sistem ini membedakan indikator penilaian kinerja berdasarkan peran pegawai. Saat Anda memilih <strong>Guru BK</strong> atau <strong>Tendik</strong>, opsi komponen dan indikator penilaian pada Triwulan I–IV akan secara otomatis disesuaikan dengan regulasi khusus masing-masing peran.</p>
+                    <p>Sistem ini membedakan indikator penilaian kinerja berdasarkan peran pegawai. Saat Anda memilih <strong>Guru BK</strong> atau <strong>Tendik</strong>, opsi komponen dan indikator penilaian pada Siklus SPMI (6M) serta Triwulan I–IV akan secara otomatis disesuaikan dengan regulasi khusus masing-masing peran.</p>
                 </div>
 
                 <div class="p-3 border-l-4 border-blue-600 bg-blue-50/50 rounded">
@@ -451,10 +451,13 @@
             </div>
         </section>
 
-        <!-- 4. SIKLUS SPMI (6M) -->
+        <!-- 4. SIKLUS SPMI (6M) - DISINKRONISASI BERDASARKAN PERAN PEGAWAI -->
         <section id="tab-spmi" class="tab-content space-y-4 hidden card">
             <div class="flex justify-between items-center border-b pb-3 no-print">
-                <h2 class="text-base font-bold">4. Siklus SPMI (6M) Penjaminan Mutu Internal 2026</h2>
+                <div>
+                    <h2 class="text-base font-bold">4. Siklus SPMI (6M) Penjaminan Mutu Internal 2026</h2>
+                    <p class="text-xs text-slate-500" id="spmi-role-subtitle">Penerapan Siklus 6M disesuaikan secara dinamis berdasarkan Peran Pegawai Terpilih.</p>
+                </div>
                 <div class="flex gap-2">
                     <button onclick="exportToWord('tab-spmi', 'Siklus_SPMI_6M')" class="bg-blue-700 hover:bg-blue-800 text-white text-xs font-bold px-3 py-1.5 rounded flex items-center gap-1 shadow">
                         <i class="fa-solid fa-file-word"></i> Ekspor Word
@@ -467,32 +470,32 @@
                 <div class="bg-indigo-50 border border-indigo-200 p-3 rounded-lg text-indigo-900">
                     <span class="bg-indigo-700 text-white font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mb-1 text-xs">1</span>
                     <h3 class="font-bold mb-1">1. Memetakan</h3>
-                    <p>Identifikasi kebutuhan belajar murid dan diagnostik awal serta ketersediaan sarana pendukung.</p>
+                    <p id="spmi-m1-desc">Identifikasi kebutuhan belajar murid dan diagnostik awal serta ketersediaan sarana pendukung.</p>
                 </div>
                 <div class="bg-blue-50 border border-blue-200 p-3 rounded-lg text-blue-900">
                     <span class="bg-blue-600 text-white font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mb-1 text-xs">2</span>
                     <h3 class="font-bold mb-1">2. Merencanakan</h3>
-                    <p>Penyusunan Modul Ajar/RPP, KKTP, Perencanaan Asesmen, dan Program Kerja Operasional Tendik.</p>
+                    <p id="spmi-m2-desc">Penyusunan Modul Ajar/RPP, KKTP, Perencanaan Asesmen, dan Program Kerja Operasional Tendik.</p>
                 </div>
                 <div class="bg-amber-50 border border-amber-200 p-3 rounded-lg text-amber-900">
                     <span class="bg-amber-600 text-white font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mb-1 text-xs">3</span>
                     <h3 class="font-bold mb-1">3. Melaksanakan</h3>
-                    <p>Pembelajaran Terdiferensiasi, Disiplin Positif, serta Pelayanan Administrasi Sekolah yang Efektif.</p>
+                    <p id="spmi-m3-desc">Pembelajaran Terdiferensiasi, Disiplin Positif, serta Pelayanan Administrasi Sekolah yang Efektif.</p>
                 </div>
                 <div class="bg-purple-50 border border-purple-200 p-3 rounded-lg text-purple-900">
                     <span class="bg-purple-600 text-white font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mb-1 text-xs">4</span>
                     <h3 class="font-bold mb-1">4. Mengevaluasi</h3>
-                    <p>Observasi Kelas oleh Kepala Sekolah, Analisis Asesmen Hasil Belajar, dan Kepuasan Layanan Tendik.</p>
+                    <p id="spmi-m4-desc">Observasi Kelas oleh Kepala Sekolah, Analisis Asesmen Hasil Belajar, dan Kepuasan Layanan Tendik.</p>
                 </div>
                 <div class="bg-orange-50 border border-orange-200 p-3 rounded-lg text-orange-900">
                     <span class="bg-orange-600 text-white font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mb-1 text-xs">5</span>
                     <h3 class="font-bold mb-1">5. Menindaklanjuti</h3>
-                    <p>Refleksi melalui Coaching TIRTA bersama Kepala Sekolah dan partisipasi aktif di Komunitas Belajar (Kombel).</p>
+                    <p id="spmi-m5-desc">Refleksi melalui Coaching TIRTA bersama Kepala Sekolah dan partisipasi aktif di Komunitas Belajar (Kombel).</p>
                 </div>
                 <div class="bg-emerald-50 border border-emerald-200 p-3 rounded-lg text-emerald-900">
                     <span class="bg-emerald-600 text-white font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mb-1 text-xs">6</span>
                     <h3 class="font-bold mb-1">6. Meningkatkan</h3>
-                    <p>Penerapan Inovasi Praktik Baik (Best Practice) baru dan penyebaran mutu pembelajaran secara berkelanjutan.</p>
+                    <p id="spmi-m6-desc">Penerapan Inovasi Praktik Baik (Best Practice) baru dan penyebaran mutu pembelajaran secara berkelanjutan.</p>
                 </div>
             </div>
         </section>
@@ -993,6 +996,34 @@
             }
         };
 
+        // KONFIGURASI SIKLUS SPMI (6M) DISINKRONISASI BERDASARKAN PERAN PEGAWAI
+        const ROLE_SPMI_CONFIG = {
+            'Guru Mapel': {
+                m1: "Identifikasi kebutuhan belajar murid, karakteristik siswa, serta hasil diagnostik awal pembelajaran.",
+                m2: "Penyusunan Modul Ajar/RPP, KKTP, Perencanaan Asesmen Formatif/Sumatif, & Media Pembelajaran Interaktif.",
+                m3: "Pelaksanaan Pembelajaran Terdiferensiasi, Pembentukan Kelompok Belajar, & Penerapan Disiplin Positif Kelas.",
+                m4: "Observasi Kelas oleh Kepala Sekolah, Analisis Hasil Belajar Murid, & Evaluasi Efektivitas Pembelajaran.",
+                m5: "Refleksi Hasil Observasi melalui Coaching TIRTA bersama Kepala Sekolah & Partisipasi Aktif Kombel.",
+                m6: "Penerapan Inovasi Praktik Baik (Best Practice) Pembelajaran Baru & Diseminasi Rekan Sejawat."
+            },
+            'Guru BK': {
+                m1: "Asesmen Kebutuhan Peserta Didik (AKPD), Pemetaan Peta Kerawanan Siswa, & Konseling Diagnostik Awal.",
+                m2: "Penyusunan Rencana Pelayanan Bimbingan Konseling (RPL BK) Klasikal, Kelompok, Individual, & Peta Karir.",
+                m3: "Pelaksanaan Bimbingan Klasikal, Konseling Individual, Konseling Kelompok, & Pendampingan Kesehatan Mental.",
+                m4: "Evaluasi Proses & Hasil Layanan BK, Survei Kepuasan Layanan Konseling, & Observasi Sikap Sosial Murid.",
+                m5: "Konferensi Kasus, Alih Tangan Kasus (Referral), Home Visit, & Refleksi Dialogis Coaching TIRTA BK.",
+                m6: "Pengembangan Modul Inovasi Layanan BK, Program Edukasi Prevention Bullying/TPPK, & Diseminasi MGBK."
+            },
+            'Tendik': {
+                m1: "Identifikasi Kebutuhan Layanan Administrasi, Inventarisasi Aset Sarpras, & Pemetaan Arsip Sekolah.",
+                m2: "Penyusunan Program Kerja Operasional Tendik, SOP Layanan Administrasi, & Kalender Kerja Tahunan.",
+                m3: "Pelaksanaan Layanan Administrasi Kesiswaan, Keuangan, Sarpras, Perpustakaan, & Operasional Sekolah Tepat Waktu.",
+                m4: "Audit Internal Administrasi, Stock Opname Aset/Perpus/Lab, & Survei Kepuasan Layanan Warga Sekolah.",
+                m5: "Tindak Lanjut Pembenahan Arsip, Perbaikan Sarpras Rusak, & Coaching TIRTA Peningkatan Kinerja Operasional.",
+                m6: "Digitalisasi Sistem Administrasi Sekolah, Inovasi Layanan Tepat Guna, & Diseminasi Efisiensi Tata Kelola."
+            }
+        };
+
         // ROADMAP & STANDAR ACUAN DISESUAIKAN PERAN (MAPEL, BK, TENDIK)
         const ROLE_ROADMAP_CONFIG = {
             'Guru Mapel': {
@@ -1264,7 +1295,7 @@
             schoolIdentity: {
                 dinas: "PEMERINTAH KABUPATEN GARUT",
                 name: "SMP NEGERI 21 PEMBANGUNAN",
-                address: "Jl. Jend. Pembangunan No. 1114 Garut • NPSN: 20200000"
+                address: "Jl. Pembangunan No. 1114 Garut • NPSN: 20111472"
             },
             currentPegawaiId: 1,
             pegawaiList: generateInitialPegawaiList(),
@@ -1395,6 +1426,16 @@
             document.querySelectorAll('.roadmap-card').forEach(c => c.classList.remove('active-roadmap'));
             const activeCard = document.getElementById(`roadmap-card-${period}`);
             if (activeCard) activeCard.classList.add('active-roadmap');
+
+            // UPDATE SIKLUS SPMI (6M) DISINKRONISASI SESUAI ROLE (GURU MAPEL / BK / TENDIK)
+            const spmiDef = ROLE_SPMI_CONFIG[role] || ROLE_SPMI_CONFIG['Guru Mapel'];
+            document.getElementById('spmi-role-subtitle').textContent = `Penerapan Siklus 6M disesuaikan untuk peran ${role}.`;
+            document.getElementById('spmi-m1-desc').textContent = spmiDef.m1;
+            document.getElementById('spmi-m2-desc').textContent = spmiDef.m2;
+            document.getElementById('spmi-m3-desc').textContent = spmiDef.m3;
+            document.getElementById('spmi-m4-desc').textContent = spmiDef.m4;
+            document.getElementById('spmi-m5-desc').textContent = spmiDef.m5;
+            document.getElementById('spmi-m6-desc').textContent = spmiDef.m6;
 
             // UPDATE SINKRONISASI TEXT ROADMAP SESUAI ROLE (GURU MAPEL / BK / TENDIK)
             const roleRoadmap = ROLE_ROADMAP_CONFIG[role] || ROLE_ROADMAP_CONFIG['Guru Mapel'];
@@ -1964,7 +2005,7 @@
             document.getElementById('modalPersonel').classList.remove('hidden');
         }
 
-        function closeModalPersonel() {
+        function closeModalModalPersonel() {
             document.getElementById('modalPersonel').classList.add('hidden');
         }
 
@@ -2105,11 +2146,11 @@
         }
 
         function saveAllDataToStorage() {
-            localStorage.setItem('MONEV_GURU_2026_INTEGRATED_V9', JSON.stringify(appState));
+            localStorage.setItem('MONEV_GURU_2026_INTEGRATED_V10', JSON.stringify(appState));
         }
 
         function loadFromLocalStorage() {
-            const saved = localStorage.getItem('MONEV_GURU_2026_INTEGRATED_V9');
+            const saved = localStorage.getItem('MONEV_GURU_2026_INTEGRATED_V10');
             if (saved) {
                 try {
                     appState = JSON.parse(saved);
