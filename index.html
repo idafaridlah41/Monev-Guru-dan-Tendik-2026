@@ -52,6 +52,19 @@
             transition: background-color 0.3s, color 0.3s, font-size 0.2s; 
         }
 
+        /* Diterapkan KHUSUS HANYA pada layar (screen) agar TIDAK MERUSAK PRINT/PDF/WORD */
+        @media screen {
+            #tab-instrumen .indicator-label, 
+            #tab-instrumen textarea, 
+            #tab-instrumen select,
+            #tab-perilaku textarea,
+            #tab-perilaku select,
+            .card p, 
+            .card table td {
+                font-size: var(--user-font-size) !important;
+            }
+        }
+
         .card { 
             background: var(--bg-card); 
             border-radius: 12px; 
@@ -105,7 +118,7 @@
             background-color: #f0f9ff !important;
         }
 
-        /* STYLES KHUSUS CETAK RESMI / PRINT PREVIEW */
+        /* STYLES KHUSUS CETAK RESMI / PRINT PREVIEW (DIKEMBALIKAN KE FORMAT ORIGINAL PRESISI) */
         @media print {
             @page {
                 size: A4 portrait;
@@ -192,8 +205,8 @@
 
             <!-- Global Action Controls -->
             <div class="flex items-center gap-2 flex-wrap no-print">
-                <button onclick="adjustFontSize(-1)" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-2 py-1 rounded" title="Kecilkan Teks">A-</button>
-                <button onclick="adjustFontSize(1)" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-2 py-1 rounded" title="Besarkan Teks">A+</button>
+                <button onclick="adjustFontSize(-2)" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-2 py-1 rounded" title="Kecilkan Teks">A-</button>
+                <button onclick="adjustFontSize(2)" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-2 py-1 rounded" title="Besarkan Teks">A+</button>
                 <button id="theme-btn" onclick="toggleTheme()" class="bg-amber-500 hover:bg-amber-600 text-slate-900 text-xs font-bold px-2.5 py-1 rounded">☀️ Terang</button>
                 <button onclick="saveAllDataToStorage()" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-2.5 py-1 rounded shadow-sm">
                     <i class="fa-solid fa-floppy-disk"></i> Simpan
@@ -278,7 +291,7 @@
                     <input type="text" id="ks-eval-name" oninput="syncActivePegawaiIdentity()" class="w-full p-1.5 border rounded bg-white dark:bg-slate-900 font-semibold">
                 </div>
                 <div>
-                    <label class="block font-bold text-blue-600 mb-1">🗺️ Triwulan Active (Roadmap)</label>
+                    <label class="block font-bold text-blue-600 mb-1">Triwulan Active (Roadmap)</label>
                     <select id="period-select" onchange="handleQuarterChange(this.value)" class="w-full p-1.5 border-2 border-blue-500 rounded bg-blue-50 dark:bg-slate-900 font-bold text-blue-700">
                         <option value="T1">Triwulan I (Jan-Mar)</option>
                         <option value="T2">Triwulan II (Apr-Jun)</option>
@@ -321,7 +334,7 @@
                 <div class="text-[9pt] text-slate-700 italic" id="pr-doc-desc">Berdasarkan Permendikdasmen Nomor 21 Tahun 2026 tentang Penjaminan Mutu & Monev Kinerja</div>
             </div>
 
-            <!-- Identitas Pegawai (Hanya muncul jika relevan pada halaman individu) -->
+            <!-- Identitas Pegawai -->
             <div id="pr-identity-block" class="text-xs space-y-1 mb-3">
                 <div class="font-bold border-b border-black pb-0.5">A. IDENTITAS PEGAWAI</div>
                 <table class="w-full text-xs border-none" style="border:none !important;">
@@ -451,7 +464,7 @@
             </div>
         </section>
 
-        <!-- 4. SIKLUS SPMI (6M) - DISINKRONISASI BERDASARKAN PERAN PEGAWAI -->
+        <!-- 4. SIKLUS SPMI (6M) -->
         <section id="tab-spmi" class="tab-content space-y-4 hidden card">
             <div class="flex justify-between items-center border-b pb-3 no-print">
                 <div>
@@ -647,7 +660,7 @@
                     <button onclick="saveAllDataToStorage()" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-3 py-1.5 rounded">💾 Simpan Permanen</button>
                 </div>
 
-                <!-- Container Instrumen Dinamis Berdasarkan Triwulan & Role Pegawai -->
+                <!-- Container Instrumen -->
                 <div id="instrumen-container" class="space-y-4"></div>
             </div>
         </section>
@@ -784,7 +797,7 @@
             </div>
         </section>
 
-        <!-- FORMAL PRINT FOOTER TEMPLATE (REKAP & LEMBAR TTD) -->
+        <!-- FORMAL PRINT FOOTER TEMPLATE -->
         <div id="global-formal-print-footer" class="print-footer-formal">
             <div class="text-xs space-y-1 mb-4" id="pr-rekap-section">
                 <div class="font-bold border-b border-black pb-0.5">C. REKAPITULASI PENILAIAN & REKOMENDASI</div>
@@ -996,7 +1009,7 @@
             }
         };
 
-        // KONFIGURASI SIKLUS SPMI (6M) DISINKRONISASI BERDASARKAN PERAN PEGAWAI
+        // KONFIGURASI SIKLUS SPMI (6M)
         const ROLE_SPMI_CONFIG = {
             'Guru Mapel': {
                 m1: "Identifikasi kebutuhan belajar murid, karakteristik siswa, serta hasil diagnostik awal pembelajaran.",
@@ -1024,7 +1037,7 @@
             }
         };
 
-        // ROADMAP & STANDAR ACUAN DISESUAIKAN PERAN (MAPEL, BK, TENDIK)
+        // ROADMAP & STANDAR ACUAN DISESUAIKAN PERAN
         const ROLE_ROADMAP_CONFIG = {
             'Guru Mapel': {
                 'T1': {
@@ -1291,7 +1304,7 @@
         }
 
         let appState = {
-            ksEvalName: "Ida Faridlah Sulaeman.",
+            ksEvalName: "Ida Faridlah Sulaeman",
             schoolIdentity: {
                 dinas: "PEMERINTAH KABUPATEN GARUT",
                 name: "SMP NEGERI 21 PEMBANGUNAN",
@@ -1300,7 +1313,8 @@
             currentPegawaiId: 1,
             pegawaiList: generateInitialPegawaiList(),
             customInstrumen: null,
-            evaluations: {}
+            evaluations: {},
+            userFontSize: 16
         };
 
         let currentPage = 1;
@@ -1308,6 +1322,7 @@
 
         window.addEventListener('DOMContentLoaded', () => {
             loadFromLocalStorage();
+            applySavedFontSize();
             renderPegawaiSelector();
             loadCurrentPegawaiData();
             renderPersonelTable();
@@ -1427,7 +1442,6 @@
             const activeCard = document.getElementById(`roadmap-card-${period}`);
             if (activeCard) activeCard.classList.add('active-roadmap');
 
-            // UPDATE SIKLUS SPMI (6M) DISINKRONISASI SESUAI ROLE (GURU MAPEL / BK / TENDIK)
             const spmiDef = ROLE_SPMI_CONFIG[role] || ROLE_SPMI_CONFIG['Guru Mapel'];
             document.getElementById('spmi-role-subtitle').textContent = `Penerapan Siklus 6M disesuaikan untuk peran ${role}.`;
             document.getElementById('spmi-m1-desc').textContent = spmiDef.m1;
@@ -1437,7 +1451,6 @@
             document.getElementById('spmi-m5-desc').textContent = spmiDef.m5;
             document.getElementById('spmi-m6-desc').textContent = spmiDef.m6;
 
-            // UPDATE SINKRONISASI TEXT ROADMAP SESUAI ROLE (GURU MAPEL / BK / TENDIK)
             const roleRoadmap = ROLE_ROADMAP_CONFIG[role] || ROLE_ROADMAP_CONFIG['Guru Mapel'];
             ['T1', 'T2', 'T3', 'T4'].forEach(q => {
                 const def = roleRoadmap[q];
@@ -1502,7 +1515,6 @@
             container.innerHTML = '';
             const evalData = appState.evaluations[evalKey];
 
-            // PILIH KUMPULAN INSTRUMEN BERDASARKAN ROLE
             let activeInstrumen = (appState.customInstrumen && appState.customInstrumen[role]) 
                 ? appState.customInstrumen[role] 
                 : (REGULATED_INSTRUMEN_DATA[role] || REGULATED_INSTRUMEN_DATA['Guru Mapel']);
@@ -2005,7 +2017,7 @@
             document.getElementById('modalPersonel').classList.remove('hidden');
         }
 
-        function closeModalModalPersonel() {
+        function closeModalPersonel() {
             document.getElementById('modalPersonel').classList.add('hidden');
         }
 
@@ -2160,12 +2172,20 @@
             }
         }
 
+        function applySavedFontSize() {
+            const html = document.documentElement;
+            const fontSz = appState.userFontSize || 16;
+            html.style.setProperty('--user-font-size', `${fontSz}px`);
+        }
+
         function adjustFontSize(delta) {
             const html = document.documentElement;
-            let current = parseInt(getComputedStyle(html).getPropertyValue('--user-font-size')) || 16;
-            current = Math.max(12, Math.min(22, current + delta));
+            let current = appState.userFontSize || 16;
+            current = Math.max(12, Math.min(24, current + delta));
+            appState.userFontSize = current;
             html.style.setProperty('--user-font-size', `${current}px`);
-            showToast(`Ukuran Teks: ${current}px`);
+            saveAllDataToStorage();
+            showToast(`Ukuran Teks Tampilan: ${current}px`);
         }
 
         function toggleTheme() {
@@ -2203,6 +2223,7 @@
                     if (data.pegawaiList && data.evaluations) {
                         appState = data;
                         saveAllDataToStorage();
+                        applySavedFontSize();
                         renderPegawaiSelector();
                         loadCurrentPegawaiData();
                         renderPersonelTable();
