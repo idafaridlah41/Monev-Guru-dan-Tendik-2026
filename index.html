@@ -352,8 +352,8 @@
 
             <div class="space-y-4 text-xs leading-relaxed">
                 <div class="p-3 border-l-4 border-emerald-600 bg-emerald-50/50 rounded">
-                    <h3 class="font-bold text-sm text-emerald-800 mb-1">1. Alur Pengelolaan Data Pegawai (60+ Personel)</h3>
-                    <p>Gunakan menu <strong>Data Pegawai</strong> untuk memasukkan seluruh daftar Guru Mapel, Guru BK, dan Tenaga Kependidikan (Tendik). Fitur pencarian real-time dan paginasi memudahkan pengelolaan skala besar tanpa menurunkan kinerja sistem.</p>
+                    <h3 class="font-bold text-sm text-emerald-800 mb-1">1. Alur Pengelolaan Data Pegawai & Penyesuaian Role (Guru Mapel / BK / Tendik)</h3>
+                    <p>Sistem ini membedakan indikator penilaian kinerja berdasarkan peran pegawai. Saat Anda memilih <strong>Guru BK</strong> atau <strong>Tendik</strong>, opsi komponen dan indikator penilaian pada Triwulan I–IV akan secara otomatis disesuaikan dengan regulasi khusus masing-masing peran.</p>
                 </div>
 
                 <div class="p-3 border-l-4 border-blue-600 bg-blue-50/50 rounded">
@@ -522,11 +522,11 @@
                     <h4 class="font-bold text-blue-900">M1 & M2: Memetakan & Merencanakan</h4>
                     <div class="bg-white p-2 border rounded">
                         <strong class="text-blue-700 block mb-1">📌 Indikator Akreditasi BAN-PDM:</strong>
-                        <p class="text-[11px]">Butir 1-3: Kelengkapan RPP/Modul Ajar, Perumusan Tujuan Pembelajaran, dan Ketersediaan Asesmen Diagnostik Awal.</p>
+                        <p class="text-[11px]" id="rm-akred-T1">Butir 1-3: Kelengkapan RPP/Modul Ajar, Perumusan Tujuan Pembelajaran, dan Ketersediaan Asesmen Diagnostik Awal.</p>
                     </div>
                     <div class="bg-white p-2 border rounded">
                         <strong class="text-amber-700 block mb-1">🎯 Poin Pembenahan Rapor PBD:</strong>
-                        <p class="text-[11px]">A.1 Literasi & A.2 Numerasi: Penyusunan strategi pembelajaran aktif di perencanaan.</p>
+                        <p class="text-[11px]" id="rm-pbd-T1">A.1 Literasi & A.2 Numerasi: Penyusunan strategi pembelajaran aktif di perencanaan.</p>
                     </div>
                 </div>
 
@@ -539,11 +539,11 @@
                     <h4 class="font-bold text-emerald-900">M3 & M4: Melaksanakan & Mengevaluasi</h4>
                     <div class="bg-white p-2 border rounded">
                         <strong class="text-emerald-700 block mb-1">📌 Indikator Akreditasi BAN-PDM:</strong>
-                        <p class="text-[11px]">Butir 4-7: Observasi Kelas, Manajemen Kelas Kondusif, Penerapan Disiplin Positif, & Pelayanan Tendik.</p>
+                        <p class="text-[11px]" id="rm-akred-T2">Butir 4-7: Observasi Kelas, Manajemen Kelas Kondusif, Penerapan Disiplin Positif, & Pelayanan Tendik.</p>
                     </div>
                     <div class="bg-white p-2 border rounded">
                         <strong class="text-amber-700 block mb-1">🎯 Poin Pembenahan Rapor PBD:</strong>
-                        <p class="text-[11px]">D.1 Kualitas Pembelajaran: Penerapan metode interaktif dan diferensiasi kelas.</p>
+                        <p class="text-[11px]" id="rm-pbd-T2">D.1 Kualitas Pembelajaran: Penerapan metode interaktif dan diferensiasi kelas.</p>
                     </div>
                 </div>
 
@@ -556,11 +556,11 @@
                     <h4 class="font-bold text-amber-900">M4 & M5: Mengevaluasi & Menindaklanjuti</h4>
                     <div class="bg-white p-2 border rounded">
                         <strong class="text-amber-700 block mb-1">📌 Indikator Akreditasi BAN-PDM:</strong>
-                        <p class="text-[11px]">Butir 8-10: Iklim Keamanan Sekolah, Inklusivitas, Pencegahan Kekerasan (TPPK), & Observasi Tendik.</p>
+                        <p class="text-[11px]" id="rm-akred-T3">Butir 8-10: Iklim Keamanan Sekolah, Inklusivitas, Pencegahan Kekerasan (TPPK), & Observasi Tendik.</p>
                     </div>
                     <div class="bg-white p-2 border rounded">
                         <strong class="text-amber-700 block mb-1">🎯 Poin Pembenahan Rapor PBD:</strong>
-                        <p class="text-[11px]">D.4 Iklim Keamanan & D.8 Kebinekaan: Keikutsertaan aktif guru dalam program Kombel.</p>
+                        <p class="text-[11px]" id="rm-pbd-T3">D.4 Iklim Keamanan & D.8 Kebinekaan: Keikutsertaan aktif guru dalam program Kombel.</p>
                     </div>
                 </div>
 
@@ -573,11 +573,11 @@
                     <h4 class="font-bold text-purple-900">M5 & M6: Menindaklanjuti & Meningkatkan</h4>
                     <div class="bg-white p-2 border rounded">
                         <strong class="text-purple-700 block mb-1">📌 Indikator Akreditasi BAN-PDM:</strong>
-                        <p class="text-[11px]">Butir 11-14: Laporan Kinerja Akhir, Portofolio Karya Inovatif, & Diseminasi Praktik Baik.</p>
+                        <p class="text-[11px]" id="rm-akred-T4">Butir 11-14: Laporan Kinerja Akhir, Portofolio Karya Inovatif, & Diseminasi Praktik Baik.</p>
                     </div>
                     <div class="bg-white p-2 border rounded">
                         <strong class="text-amber-700 block mb-1">🎯 Poin Pembenahan Rapor PBD:</strong>
-                        <p class="text-[11px]">C.3 Kepemimpinan Instruksional: Penilaian akumulasi Predikat Kinerja BKN.</p>
+                        <p class="text-[11px]" id="rm-pbd-T4">C.3 Kepemimpinan Instruksional: Penilaian akumulasi Predikat Kinerja BKN.</p>
                     </div>
                 </div>
             </div>
@@ -634,17 +634,17 @@
                     <div class="flex gap-2 items-center flex-1">
                         <select id="filter-comp" onchange="filterInstrumen()" class="p-1.5 border rounded text-xs bg-white dark:bg-slate-900">
                             <option value="ALL">Semua Komponen Terfilter Triwulan</option>
-                            <option value="1. Perencanaan Pembelajaran / Kerja">1. Perencanaan Pembelajaran / Kerja</option>
-                            <option value="2. Pelaksanaan & Praktik Observasi">2. Pelaksanaan & Praktik Observasi</option>
-                            <option value="3. Asesmen & Evaluasi Layanan">3. Asesmen & Evaluasi Layanan</option>
-                            <option value="4. Iklim & Komunitas Belajar">4. Iklim & Komunitas Belajar</option>
+                            <option value="1. Perencanaan Pembelajaran / Kerja">1. Perencanaan Pembelajaran / Kerja / Perencanaan Layanan</option>
+                            <option value="2. Pelaksanaan & Praktik Observasi">2. Pelaksanaan Observasi / Layanan BK / Administrasi Operasional</option>
+                            <option value="3. Asesmen & Evaluasi Layanan">3. Asesmen, Evaluasi & Laporan Hasil</option>
+                            <option value="4. Iklim & Komunitas Belajar">4. Iklim Belajar & Komunitas Belajar (Kombel)</option>
                         </select>
                         <input type="text" id="search-box" oninput="filterInstrumen()" placeholder="Cari indikator kinerja..." class="p-1.5 border rounded text-xs bg-white dark:bg-slate-900 flex-1">
                     </div>
                     <button onclick="saveAllDataToStorage()" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-3 py-1.5 rounded">💾 Simpan Permanen</button>
                 </div>
 
-                <!-- Container Instrumen Dinamis Berdasarkan Triwulan -->
+                <!-- Container Instrumen Dinamis Berdasarkan Triwulan & Role Pegawai -->
                 <div id="instrumen-container" class="space-y-4"></div>
             </div>
         </section>
@@ -690,7 +690,7 @@
 
             <div class="border-t border-slate-200 dark:border-slate-700 pt-4 mt-4">
                 <div class="flex justify-between items-center mb-3">
-                    <h3 class="font-bold text-xs uppercase text-slate-600">🏫 Log Observasi Kelas / Supervisi Klinis</h3>
+                    <h3 class="font-bold text-xs uppercase text-slate-600">🏫 Log Observasi Kelas / Supervisi Klinis / Supervisi Layanan</h3>
                     <button onclick="addSupervisiLog()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-1.5 rounded no-print">➕ Tambah Observasi</button>
                 </div>
                 <div id="supervisi-container" class="space-y-2"></div>
@@ -819,7 +819,7 @@
             </div>
         </div>
 
-        <!-- FOOTER APLIKASI (HANYA MUNCUL DI TAMPILAN APLIKASI, TIDAK IKUT DICETAK / WORD / PDF) -->
+        <!-- FOOTER APLIKASI -->
         <footer class="text-center py-6 text-slate-500 text-xs border-t border-slate-200 dark:border-slate-800 space-y-1 no-print">
             <p class="italic font-medium">"Menuntun tumbuh kembang pendidik dan tenaga kependidikan demi terwujudnya pembelajaran yang berorientasi pada murid."</p>
             <p>© 2026 Aplikasi Monev Kinerja Guru, BK, & Tendik • Permendikdasmen No. 21/2026</p>
@@ -841,7 +841,7 @@
                     <select id="personelJabatan" required class="w-full p-2 border rounded bg-white dark:bg-slate-900">
                         <option value="Guru Mapel">Guru Kelas / Mapel</option>
                         <option value="Guru BK">Guru BK / Konselor</option>
-                        <option value="Tendik">Tenaga Kependidikan (Tendik/TAS/Lab)</option>
+                        <option value="Tendik">Tenaga Kependidikan (Tendik/TAS/Lab/Perpus)</option>
                     </select>
                 </div>
                 <div>
@@ -854,7 +854,7 @@
                 </div>
                 <div>
                     <label class="block font-bold text-slate-600 dark:text-slate-300 mb-1">Mata Pelajaran / Tugas Utama</label>
-                    <input type="text" id="personelMapel" placeholder="Contoh: Matematika / Kepala TAS" class="w-full p-2 border rounded bg-white dark:bg-slate-900">
+                    <input type="text" id="personelMapel" placeholder="Contoh: Matematika / Konselor / Kepala TAS" class="w-full p-2 border rounded bg-white dark:bg-slate-900">
                 </div>
                 <div>
                     <label class="block font-bold text-slate-600 dark:text-slate-300 mb-1">Status Kepegawaian</label>
@@ -880,11 +880,19 @@
             </div>
             <form id="formKomponen" onsubmit="handleSaveKomponen(event)" class="p-6 space-y-3 text-xs">
                 <div>
+                    <label class="block font-bold text-slate-600 dark:text-slate-300 mb-1">Pilih Peran Target *</label>
+                    <select id="modalCompRole" required class="w-full p-2 border rounded bg-white dark:bg-slate-900 font-bold text-emerald-600">
+                        <option value="Guru Mapel">Guru Mapel / Kelas</option>
+                        <option value="Guru BK">Guru BK / Konselor</option>
+                        <option value="Tendik">Tenaga Kependidikan (Tendik)</option>
+                    </select>
+                </div>
+                <div>
                     <label class="block font-bold text-slate-600 dark:text-slate-300 mb-1">Pilih Komponen Utama *</label>
                     <select id="modalCompTarget" required class="w-full p-2 border rounded bg-white dark:bg-slate-900 font-semibold">
-                        <option value="1">Komponen 1: Perencanaan Pembelajaran / Perencanaan Kerja</option>
-                        <option value="2">Komponen 2: Pelaksanaan & Praktik Observasi Kelas / Layanan</option>
-                        <option value="3">Komponen 3: Asesmen, Evaluasi & Pelaporan Hasil Belajar / Layanan</option>
+                        <option value="1">Komponen 1: Perencanaan Pembelajaran / Perencanaan Kerja / Layanan</option>
+                        <option value="2">Komponen 2: Pelaksanaan & Praktik Observasi / Layanan BK / Operasional</option>
+                        <option value="3">Komponen 3: Asesmen, Evaluasi & Laporan Hasil Belajar / Layanan</option>
                         <option value="4">Komponen 4: Iklim Belajar & Kontribusi Komunitas Belajar (Kombel)</option>
                     </select>
                 </div>
@@ -899,11 +907,11 @@
                 </div>
                 <div>
                     <label class="block font-bold text-slate-600 dark:text-slate-300 mb-1">Kode Indikator Custom *</label>
-                    <input type="text" id="modalCompCode" required placeholder="Contoh: 1.4 / 2.5 / C-01" class="w-full p-2 border rounded bg-white dark:bg-slate-900 font-bold">
+                    <input type="text" id="modalCompCode" required placeholder="Contoh: 1.4 / BK-01 / T-02" class="w-full p-2 border rounded bg-white dark:bg-slate-900 font-bold">
                 </div>
                 <div>
                     <label class="block font-bold text-slate-600 dark:text-slate-300 mb-1">Deskripsi Indikator Kinerja *</label>
-                    <textarea id="modalCompLabel" required rows="3" placeholder="Deskripsikan indikator kinerja custom yang ingin ditambahkan..." class="w-full p-2 border rounded bg-white dark:bg-slate-900"></textarea>
+                    <textarea id="modalCompLabel" required rows="3" placeholder="Deskripsikan indikator kinerja custom..." class="w-full p-2 border rounded bg-white dark:bg-slate-900"></textarea>
                 </div>
                 <div class="flex justify-end space-x-2 pt-3 border-t">
                     <button type="button" onclick="closeModalKomponen()" class="px-4 py-2 border rounded">Batal</button>
@@ -985,88 +993,253 @@
             }
         };
 
-        const ROADMAP_DEFINITIONS = {
-            'T1': {
-                title: "Triwulan 1 (Jan-Mar) — M1 & M2: Memetakan & Merencanakan",
-                phase: "M1 & M2",
-                akred: "Butir 1-3: Kelengkapan RPP/Modul Ajar, Perumusan Tujuan Pembelajaran, dan Ketersediaan Asesmen Diagnostik Awal.",
-                pbd: "A.1 Literasi & A.2 Numerasi: Penyusunan strategi pembelajaran aktif di perencanaan.",
-                pbdDefault: [
-                    { indikator: "A.1 Literasi & A.2 Numerasi (Strategi Pembelajaran)", aksi: "Pelatihan Modul Ajar Interaktif & Asesmen Diagnostik", target: "Dokumen Modul Ajar Terpenuhi" }
-                ]
+        // ROADMAP & STANDAR ACUAN DISESUAIKAN PERAN (MAPEL, BK, TENDIK)
+        const ROLE_ROADMAP_CONFIG = {
+            'Guru Mapel': {
+                'T1': {
+                    title: "Triwulan 1 (Jan-Mar) — M1 & M2: Memetakan & Merencanakan Pembelajaran",
+                    phase: "M1 & M2",
+                    akred: "Butir 1-3: Kelengkapan Modul Ajar/RPP, Tujuan Pembelajaran, & Asesmen Diagnostik Awal.",
+                    pbd: "A.1 Literasi & A.2 Numerasi: Penyusunan strategi pembelajaran aktif di perencanaan.",
+                    pbdDefault: [
+                        { indikator: "A.1 Literasi & A.2 Numerasi (Strategi Pembelajaran)", aksi: "Pelatihan Modul Ajar Interaktif & Asesmen Diagnostik", target: "Dokumen Modul Ajar Terpenuhi" }
+                    ]
+                },
+                'T2': {
+                    title: "Triwulan 2 (Apr-Jun) — M3 & M4: Melaksanakan & Mengevaluasi Observasi Kelas",
+                    phase: "M3 & M4",
+                    akred: "Butir 4-7: Observasi Kelas, Manajemen Kelas Kondusif, & Disiplin Positif.",
+                    pbd: "D.1 Kualitas Pembelajaran: Penerapan metode interaktif dan diferensiasi kelas.",
+                    pbdDefault: [
+                        { indikator: "D.1 Kualitas Pembelajaran (Metode Interaktif)", aksi: "Observasi Kelas & Penerapan Disiplin Positif", target: "Keterlaksanaan Observasi 100%" }
+                    ]
+                },
+                'T3': {
+                    title: "Triwulan 3 (Jul-Sep) — M4 & M5: Mengevaluasi & Menindaklanjuti Asesmen",
+                    phase: "M4 & M5",
+                    akred: "Butir 8-10: Iklim Keamanan Sekolah, Inklusivitas, TPPK, & Evaluasi Hasil Belajar.",
+                    pbd: "D.4 Iklim Keamanan & D.8 Kebinekaan: Partisipasi aktif dalam Komunitas Belajar (Kombel).",
+                    pbdDefault: [
+                        { indikator: "D.4 Iklim Keamanan & D.8 Kebinekaan", aksi: "Penguatan Kombel & Program Edukasi Pencegahan Kekerasan", target: "Terbentuk Lingkungan Aman & Kombel Aktif" }
+                    ]
+                },
+                'T4': {
+                    title: "Triwulan 4 (Okt-Des) — M5 & M6: Menindaklanjuti & Meningkatkan Mutu",
+                    phase: "M5 & M6",
+                    akred: "Butir 11-14: Laporan Capaian Akhir, Portofolio Karya Inovatif, & Diseminasi Praktik Baik.",
+                    pbd: "C.3 Kepemimpinan Instruksional: Penilaian akumulasi Predikat Kinerja BKN.",
+                    pbdDefault: [
+                        { indikator: "C.3 Kepemimpinan Instruksional", aksi: "Penyusunan Portofolio Best Practice & Evaluasi Predikat BKN", target: "Predikat Kinerja Terakumulasi BAIK" }
+                    ]
+                }
             },
-            'T2': {
-                title: "Triwulan 2 (Apr-Jun) — M3 & M4: Melaksanakan & Mengevaluasi",
-                phase: "M3 & M4",
-                akred: "Butir 4-7: Observasi Kelas, Manajemen Kelas Kondusif, Penerapan Disiplin Positif, & Pelayanan Tendik.",
-                pbd: "D.1 Kualitas Pembelajaran: Penerapan metode interaktif dan diferensiasi kelas.",
-                pbdDefault: [
-                    { indikator: "D.1 Kualitas Pembelajaran (Metode Interaktif)", aksi: "Observasi Kelas & Penerapan Disiplin Positif", target: "Keterlaksanaan Observasi 100%" }
-                ]
+            'Guru BK': {
+                'T1': {
+                    title: "Triwulan 1 (Jan-Mar) — M1 & M2: Memetakan Kebutuhan Murid & RPL BK",
+                    phase: "M1 & M2",
+                    akred: "Butir 1-3: Asesmen Kebutuhan Peserta Didik (AKPD), Peta Kerawanan, & Program Layanan BK.",
+                    pbd: "D.4 Iklim Keamanan Sekolah: Pemetaan awal masalah kesehatan mental & perundungan.",
+                    pbdDefault: [
+                        { indikator: "D.4 Iklim Keamanan Sekolah (Pencegahan Bullying)", aksi: "Penyusunan RPL BK Berbasis AKPD & Peta Kerawanan Siswa", target: "Program Layanan BK Terstruktur 100%" }
+                    ]
+                },
+                'T2': {
+                    title: "Triwulan 2 (Apr-Jun) — M3 & M4: Pelaksanaan Layanan Bimbingan & Konseling",
+                    phase: "M3 & M4",
+                    akred: "Butir 4-7: Bimbingan Klasikal, Konseling Individual, & Konseling Kelompok.",
+                    pbd: "D.10 Inklusivitas & Character Building: Pendampingan pribadi, sosial, belajar, & karir.",
+                    pbdDefault: [
+                        { indikator: "D.10 Inklusivitas & Pendampingan Siswa", aksi: "Pelaksanaan Konseling Individual & Bimbingan Kelompok Rutin", target: "Keterlaksanaan Konseling 100%" }
+                    ]
+                },
+                'T3': {
+                    title: "Triwulan 3 (Jul-Sep) — M4 & M5: Evaluasi Layanan BK & Kolaborasi Orang Tua",
+                    phase: "M4 & M5",
+                    akred: "Butir 8-10: Penanganan Kasus, Alih Tangan Kasus (Referral), & Home Visit.",
+                    pbd: "E.1 Keterlibatan Orang Tua: Evaluasi kepuasan layanan bimbingan konseling.",
+                    pbdDefault: [
+                        { indikator: "E.1 Kolaborasi Orang Tua & Layanan BK", aksi: "Pelaksanaan Home Visit & Konferensi Kasus Bersama Wali Murid", target: "Penanganan Kasus Tuntas > 90%" }
+                    ]
+                },
+                'T4': {
+                    title: "Triwulan 4 (Okt-Des) — M5 & M6: Pelaporan Evaluasi Layanan BK & Tindak Lanjut",
+                    phase: "M5 & M6",
+                    akred: "Butir 11-14: Laporan Evaluasi Program BK, Porfolio Bimbingan Karir, & Diseminasi.",
+                    pbd: "C.3 Kepemimpinan Instruksional: Akumulasi predikat evaluasi layanan BK.",
+                    pbdDefault: [
+                        { indikator: "C.3 Kepemimpinan Instruksional Layanan BK", aksi: "Penyusunan Laporan Evaluasi Program BK & Portofolio Bimbingan Karir", target: "Predikat Layanan BK BAIK" }
+                    ]
+                }
             },
-            'T3': {
-                title: "Triwulan 3 (Jul-Sep) — M4 & M5: Mengevaluasi & Menindaklanjuti",
-                phase: "M4 & M5",
-                akred: "Butir 8-10: Iklim Keamanan Sekolah, Inklusivitas, Pencegahan Kekerasan (TPPK), & Observasi Tendik.",
-                pbd: "D.4 Iklim Keamanan & D.8 Kebinekaan: Keikutsertaan aktif guru dalam program Kombel.",
-                pbdDefault: [
-                    { indikator: "D.4 Iklim Keamanan & D.8 Kebinekaan (Inklusivitas & TPPK)", aksi: "Penguatan Komunitas Belajar (Kombel) & Program Edukasi TPPK", target: "Terbentuk Lingkungan Aman & Kombel Aktif" }
-                ]
-            },
-            'T4': {
-                title: "Triwulan 4 (Okt-Des) — M5 & M6: Menindaklanjuti & Meningkatkan",
-                phase: "M5 & M6",
-                akred: "Butir 11-14: Laporan Kinerja Akhir, Portofolio Karya Inovatif, & Diseminasi Praktik Baik.",
-                pbd: "C.3 Kepemimpinan Instruksional: Penilaian akumulasi Predikat Kinerja BKN.",
-                pbdDefault: [
-                    { indikator: "C.3 Kepemimpinan Instruksional (Diseminasi Inovasi)", aksi: "Penyusunan Portofolio Best Practice & Evaluasi Predikat BKN", target: "Predikat Kinerja Terakumulasi BAIK" }
-                ]
+            'Tendik': {
+                'T1': {
+                    title: "Triwulan 1 (Jan-Mar) — M1 & M2: Memetakan & Perencanaan Program Administrasi",
+                    phase: "M1 & M2",
+                    akred: "Butir 1-3: Penyusunan Program Kerja Operasional, Kalender Kerja Tendik, & SOP Layanan.",
+                    pbd: "C.1 Pengelolaan Sumber Daya Sekolah: Pembenahan tata kelola arsip & sarpras.",
+                    pbdDefault: [
+                        { indikator: "C.1 Pengelolaan Sumber Daya Sekolah", aksi: "Penyusunan SOP Pelayanan Administrasi & Digitalisasi Arsip", target: "Dokumen SOP Terpenuhi 100%" }
+                    ]
+                },
+                'T2': {
+                    title: "Triwulan 2 (Apr-Jun) — M3 & M4: Pelaksanaan Layanan Operasional Administrasi",
+                    phase: "M3 & M4",
+                    akred: "Butir 4-7: Efektivitas Layanan Administrasi Kesiswaan, Keuangan, Sarpras, & Perpustakaan.",
+                    pbd: "D.1 Kualitas Layanan Pendukung: Ketepatan waktu & kerapian layanan operasional.",
+                    pbdDefault: [
+                        { indikator: "D.1 Kualitas Layanan Pendukung Sekolah", aksi: "Penerapan Layanan Tepat Waktu & Pemeliharaan Sarpras", target: "Kepuasan Layanan Administrasi > 90%" }
+                    ]
+                },
+                'T3': {
+                    title: "Triwulan 3 (Jul-Sep) — M4 & M5: Evaluasi & Audit Sarpras / Administrasi",
+                    phase: "M4 & M5",
+                    akred: "Butir 8-10: Audit Stok Sarpras, Pemeliharaan Aset, & Evaluasi Kepuasan Pelanggan.",
+                    pbd: "C.2 Pengelolaan Operasional: Evaluasi efisiensi penggunaan anggaran & fasilitas.",
+                    pbdDefault: [
+                        { indikator: "C.2 Pengelolaan Operasional Sekolah", aksi: "Stock Opname Aset/Perpus/Lab & Survei Kepuasan Layanan", target: "Audit Layanan Tanpa Temuan Minor" }
+                    ]
+                },
+                'T4': {
+                    title: "Triwulan 4 (Okt-Des) — M5 & M6: Laporan Kinerja Pertanggungjawaban Akhir",
+                    phase: "M5 & M6",
+                    akred: "Butir 11-14: Penyusunan Laporan Tahunan Tendik, SPJ, & Inovasi Layanan Administrasi.",
+                    pbd: "C.3 Kepemimpinan Administrasi: Rekapitulasi Predikat Kinerja Tendik.",
+                    pbdDefault: [
+                        { indikator: "C.3 Kepemimpinan Administrasi Sekolah", aksi: "Penyusunan Laporan Pertanggungjawaban (LPJ) & Evaluasi BKN", target: "Laporan LPJ Selesai & Predikat BAIK" }
+                    ]
+                }
             }
         };
 
-        let INSTRUMEN_DATA = [
-            {
-                id: 1,
-                title: "Komponen 1: Perencanaan Pembelajaran / Perencanaan Kerja",
-                category: "1. Perencanaan Pembelajaran / Kerja",
-                subItems: [
-                    { code: "1.1", label: "Penyusunan Perencanaan Pembelajaran (Modul Ajar / RPP / Program kerja Tendik) terstruktur dan relevan.", quarter: "T1" },
-                    { code: "1.2", label: "Perumusan Tujuan Pembelajaran & Asesmen Diagnostik berdasarkan kebutuhan belajar murid.", quarter: "T1" },
-                    { code: "1.3", label: "Pemilihan media, sarana digital, dan sumber belajar yang mendukung interaktivitas.", quarter: "T1" }
-                ]
-            },
-            {
-                id: 2,
-                title: "Komponen 2: Pelaksanaan & Praktik Observasi Kelas / Layanan",
-                category: "2. Pelaksanaan & Praktik Observasi",
-                subItems: [
-                    { code: "2.1", label: "Penerapan strategi pembelajaran berdiferensiasi dan manajemen kelas yang kondusif.", quarter: "T2" },
-                    { code: "2.2", label: "Pemberian umpan balik konstruktif dan dorongan bernalar kritis kepada murid.", quarter: "T2" },
-                    { code: "2.3", label: "Penerapan disiplin positif dan komunikasi yang ramah, aman, serta menghargai keberagaman.", quarter: "T2" },
-                    { code: "2.4", label: "Efektivitas dan ketepatan waktu dalam pelaksanaan pelayanan administrasi / operasional Tendik.", quarter: "T2" }
-                ]
-            },
-            {
-                id: 3,
-                title: "Komponen 3: Asesmen, Evaluasi & Pelaporan Hasil Belajar / Layanan",
-                category: "3. Asesmen & Evaluasi Layanan",
-                subItems: [
-                    { code: "3.1", label: "Pelaksanaan Asesmen Formatif & Sumatif secara transparan dan akuntabel.", quarter: "T3" },
-                    { code: "3.2", label: "Analisis hasil asesmen untuk perbaikan instruksional (Refleksi Pembelajaran).", quarter: "T3" },
-                    { code: "3.3", label: "Penyampaian Laporan Perkembangan Belajar Murid / Laporan Layanan Tendik secara berkala.", quarter: "T3" }
-                ]
-            },
-            {
-                id: 4,
-                title: "Komponen 4: Iklim Belajar & Kontribusi Komunitas Belajar (Kombel)",
-                category: "4. Iklim & Komunitas Belajar",
-                subItems: [
-                    { code: "4.1", label: "Partisipasi aktif dalam Komunitas Belajar (Kombel) internal maupun antar-sekolah.", quarter: "T3" },
-                    { code: "4.2", label: "Dukungan terhadap iklim inklusif, pencegahan kekerasan (TPPK), dan kebersihan lingkungan sekolah.", quarter: "T3" },
-                    { code: "4.3", label: "Pengembangan kompetensi berkelanjutan dan penyusunan laporan inovasi/diseminasi.", quarter: "T4" }
-                ]
-            }
-        ];
+        // INSTRUMEN PENILAIAN PRAKTIK KINERJA DIBEDAKAN PER ROLE PEGAWAI
+        const REGULATED_INSTRUMEN_DATA = {
+            'Guru Mapel': [
+                {
+                    id: 1,
+                    title: "Komponen 1: Perencanaan Pembelajaran / Modul Ajar",
+                    category: "1. Perencanaan Pembelajaran / Kerja",
+                    subItems: [
+                        { code: "1.1", label: "Penyusunan Modul Ajar / RPP terstruktur, memuat tujuan pembelajaran dan asesmen.", quarter: "T1" },
+                        { code: "1.2", label: "Perumusan Tujuan Pembelajaran & Asesmen Diagnostik berdasarkan kebutuhan belajar murid.", quarter: "T1" },
+                        { code: "1.3", label: "Pemilihan media, sarana digital, dan sumber belajar yang mendukung interaktivitas.", quarter: "T1" }
+                    ]
+                },
+                {
+                    id: 2,
+                    title: "Komponen 2: Pelaksanaan Pembelajaran & Observasi Kelas",
+                    category: "2. Pelaksanaan & Praktik Observasi",
+                    subItems: [
+                        { code: "2.1", label: "Penerapan strategi pembelajaran berdiferensiasi dan manajemen kelas yang kondusif.", quarter: "T2" },
+                        { code: "2.2", label: "Pemberian umpan balik konstruktif dan dorongan bernalar kritis kepada murid.", quarter: "T2" },
+                        { code: "2.3", label: "Penerapan disiplin positif dan komunikasi yang ramah, aman, serta menghargai keberagaman.", quarter: "T2" }
+                    ]
+                },
+                {
+                    id: 3,
+                    title: "Komponen 3: Asesmen & Evaluasi Hasil Belajar Murid",
+                    category: "3. Asesmen & Evaluasi Layanan",
+                    subItems: [
+                        { code: "3.1", label: "Pelaksanaan Asesmen Formatif & Sumatif secara transparan dan akuntabel.", quarter: "T3" },
+                        { code: "3.2", label: "Analisis hasil asesmen untuk perbaikan instruksional (Refleksi Pembelajaran).", quarter: "T3" },
+                        { code: "3.3", label: "Penyampaian Laporan Perkembangan Belajar Murid secara berkala kepada orang tua.", quarter: "T3" }
+                    ]
+                },
+                {
+                    id: 4,
+                    title: "Komponen 4: Iklim Belajar & Kontribusi Komunitas Belajar (Kombel)",
+                    category: "4. Iklim & Komunitas Belajar",
+                    subItems: [
+                        { code: "4.1", label: "Partisipasi aktif dalam Komunitas Belajar (Kombel) internal maupun antar-sekolah.", quarter: "T3" },
+                        { code: "4.2", label: "Dukungan terhadap iklim inklusif dan pencegahan kekerasan (TPPK) di sekolah.", quarter: "T3" },
+                        { code: "4.3", label: "Pengembangan kompetensi berkelanjutan dan penyusunan laporan inovasi/diseminasi.", quarter: "T4" }
+                    ]
+                }
+            ],
+            'Guru BK': [
+                {
+                    id: 1,
+                    title: "Komponen 1: Perencanaan Layanan Bimbingan & Konseling (RPL BK)",
+                    category: "1. Perencanaan Pembelajaran / Kerja",
+                    subItems: [
+                        { code: "BK-1.1", label: "Penyusunan Asesmen Kebutuhan Peserta Didik (AKPD) dan Peta Kerawanan Murid.", quarter: "T1" },
+                        { code: "BK-1.2", label: "Penyusunan Rencana Pelayanan Bimbingan dan Konseling (RPL BK) tahunan/semesteran.", quarter: "T1" },
+                        { code: "BK-1.3", label: "Pengembangan media bimbingan konseling dan sarana layanan informasi karir/pribadi.", quarter: "T1" }
+                    ]
+                },
+                {
+                    id: 2,
+                    title: "Komponen 2: Pelaksanaan Layanan BK (Klasikal, Individual, & Kelompok)",
+                    category: "2. Pelaksanaan & Praktik Observasi",
+                    subItems: [
+                        { code: "BK-2.1", label: "Pelaksanaan Bimbingan Klasikal yang komunikatif, interaktif, dan responsif.", quarter: "T2" },
+                        { code: "BK-2.2", label: "Pelaksanaan Konseling Individual dan Konseling Kelompok dengan empati dan kerahasiaan.", quarter: "T2" },
+                        { code: "BK-2.3", label: "Penerapan pendekatan konseling yang mendukung kesehatan mental dan disiplin positif.", quarter: "T2" }
+                    ]
+                },
+                {
+                    id: 3,
+                    title: "Komponen 3: Evaluasi Layanan, Referral & Konferensi Kasus",
+                    category: "3. Asesmen & Evaluasi Layanan",
+                    subItems: [
+                        { code: "BK-3.1", label: "Evaluasi proses dan hasil layanan Bimbingan Konseling secara berkala.", quarter: "T3" },
+                        { code: "BK-3.2", label: "Pelaksanaan Alih Tangan Kasus (Referral) dan Kunjungan Rumah (Home Visit) jika diperlukan.", quarter: "T3" },
+                        { code: "BK-3.3", label: "Penyusunan Laporan Pelaksanaan Program BK (LAPELGIBK) per triwulan.", quarter: "T3" }
+                    ]
+                },
+                {
+                    id: 4,
+                    title: "Komponen 4: Kolaborasi Sekolah, Orang Tua & Pengembangan Profesi BK",
+                    category: "4. Iklim & Komunitas Belajar",
+                    subItems: [
+                        { code: "BK-4.1", label: "Kolaborasi dengan Guru Mapel, Wali Kelas, Orang Tua, dan MGBK (Musyawarah Guru BK).", quarter: "T3" },
+                        { code: "BK-4.2", label: "Dukungan aktif terhadap Program Pencegahan Kekerasan (TPPK) dan Iklim Inklusif.", quarter: "T3" },
+                        { code: "BK-4.3", label: "Penyusunan portofolio bimbingan karir murid dan laporan inovasi layanan BK.", quarter: "T4" }
+                    ]
+                }
+            ],
+            'Tendik': [
+                {
+                    id: 1,
+                    title: "Komponen 1: Perencanaan Kerja & SOP Layanan Administrasi",
+                    category: "1. Perencanaan Pembelajaran / Kerja",
+                    subItems: [
+                        { code: "TDK-1.1", label: "Penyusunan Program Kerja Operasional Tendik dan Kalender Kerja Administrasi.", quarter: "T1" },
+                        { code: "TDK-1.2", label: "Penyusunan & Pemutakhiran Standar Operasional Prosedur (SOP) Pelayanan.", quarter: "T1" },
+                        { code: "TDK-1.3", label: "Pengelolaan sistem pendokumentasian dan sarana digitalisasi data sekolah.", quarter: "T1" }
+                    ]
+                },
+                {
+                    id: 2,
+                    title: "Komponen 2: Pelaksanaan Layanan Operasional (Kesiswaan/Keuangan/Sarpras)",
+                    category: "2. Pelaksanaan & Praktik Observasi",
+                    subItems: [
+                        { code: "TDK-2.1", label: "Ketepatan waktu, ketelitian, dan kerapian dalam pengelolaan administrasi resmi.", quarter: "T2" },
+                        { code: "TDK-2.2", label: "Sikap ramah, solutif, dan komunikatif dalam melayani guru, murid, dan masyarakat.", quarter: "T2" },
+                        { code: "TDK-2.3", label: "Pemeliharaan dan pengelolaan sarana, prasarana, atau koleksi perpustakaan/laboratorium.", quarter: "T2" }
+                    ]
+                },
+                {
+                    id: 3,
+                    title: "Komponen 3: Audit Sarpras, Inventarisasi & Evaluasi Layanan",
+                    category: "3. Asesmen & Evaluasi Layanan",
+                    subItems: [
+                        { code: "TDK-3.1", label: "Pelaksanaan inventarisasi berkala (Stock Opname) aset dan sarana sekolah.", quarter: "T3" },
+                        { code: "TDK-3.2", label: "Evaluasi tingkat kepuasan warga sekolah terhadap layanan administrasi/operasional.", quarter: "T3" },
+                        { code: "TDK-3.3", label: "Penyusunan Laporan Keuangan / Laporan Kesiswaan / Sarpras per triwulan.", quarter: "T3" }
+                    ]
+                },
+                {
+                    id: 4,
+                    title: "Komponen 4: Pengembangan Kompetensi Tendik & Laporan Akhir",
+                    category: "4. Iklim & Komunitas Belajar",
+                    subItems: [
+                        { code: "TDK-4.1", label: "Keikutsertaan dalam bimbingan teknis / pelatihan peningkatan kapasitas Tendik.", quarter: "T3" },
+                        { code: "TDK-4.2", label: "Dukungan terhadap kebersihan, keamanan, dan ketertiban lingkungan sekolah.", quarter: "T3" },
+                        { code: "TDK-4.3", label: "Penyusunan Laporan Pertanggungjawaban (LPJ) Kinerja Tahunan Tendik.", quarter: "T4" }
+                    ]
+                }
+            ]
+        };
 
         const PERILAKU_DATA = [
             { id: "berorientasi", title: "Berorientasi Pelayanan", desc: "Memahami dan memenuhi kebutuhan murid, orang tua, dan warga sekolah. Ramah, cekatan, solutif, dan dapat diandalkan." },
@@ -1087,11 +1260,11 @@
         }
 
         let appState = {
-            ksEvalName: "Ida Faridlah Sulaeman",
+            ksEvalName: "Ida Faridlah Sulaeman.",
             schoolIdentity: {
                 dinas: "PEMERINTAH KABUPATEN GARUT",
-                name: "SMP NEGERI 21 GARUT",
-                address: "Jl. Jend. Pembangunan No. 1411 Garut • NPSN: 20200000"
+                name: "SMP NEGERI 21 PEMBANGUNAN",
+                address: "Jl. Jend. Pembangunan No. 1114 Garut • NPSN: 20200000"
             },
             currentPegawaiId: 1,
             pegawaiList: generateInitialPegawaiList(),
@@ -1195,11 +1368,12 @@
             if (!p) return;
             appState.currentPegawaiId = p.id;
 
+            const role = p.role || 'Guru Mapel';
             const period = p.period || 'T1';
 
             document.getElementById('t-name').value = p.name || '';
             document.getElementById('t-nip').value = p.nip || '';
-            document.getElementById('t-role').value = p.role || 'Guru Mapel';
+            document.getElementById('t-role').value = role;
             document.getElementById('t-status').value = p.status || 'ASN';
             document.getElementById('ks-eval-name').value = appState.ksEvalName || '';
             document.getElementById('period-select').value = period;
@@ -1222,9 +1396,21 @@
             const activeCard = document.getElementById(`roadmap-card-${period}`);
             if (activeCard) activeCard.classList.add('active-roadmap');
 
+            // UPDATE SINKRONISASI TEXT ROADMAP SESUAI ROLE (GURU MAPEL / BK / TENDIK)
+            const roleRoadmap = ROLE_ROADMAP_CONFIG[role] || ROLE_ROADMAP_CONFIG['Guru Mapel'];
+            ['T1', 'T2', 'T3', 'T4'].forEach(q => {
+                const def = roleRoadmap[q];
+                if (def) {
+                    const akredEl = document.getElementById(`rm-akred-${q}`);
+                    const pbdEl = document.getElementById(`rm-pbd-${q}`);
+                    if (akredEl) akredEl.textContent = def.akred;
+                    if (pbdEl) pbdEl.textContent = def.pbd;
+                }
+            });
+
             const evalKey = `eval_${p.id}_${period}`;
             if (!appState.evaluations[evalKey]) {
-                const roadDef = ROADMAP_DEFINITIONS[period];
+                const roadDef = roleRoadmap[period];
                 appState.evaluations[evalKey] = {
                     driveUrls: {},
                     scores: {},
@@ -1236,12 +1422,12 @@
                 };
             }
 
-            renderInstrumenTab(evalKey, period);
+            renderInstrumenTab(evalKey, period, role);
             renderPerilakuTab(evalKey);
             renderPbdTab(evalKey);
             renderTirtaTab(evalKey);
-            updateAnalytics(evalKey);
-            updateRoadmapBannerInfo(period);
+            updateAnalytics(evalKey, role);
+            updateRoadmapBannerInfo(period, role);
         }
 
         function syncActivePegawaiIdentity() {
@@ -1261,20 +1447,25 @@
             }
         }
 
-        function updateRoadmapBannerInfo(period) {
-            const roadDef = ROADMAP_DEFINITIONS[period] || ROADMAP_DEFINITIONS['T1'];
-            document.getElementById('q-banner-title').textContent = roadDef.title;
+        function updateRoadmapBannerInfo(period, role = 'Guru Mapel') {
+            const roleRoadmap = ROLE_ROADMAP_CONFIG[role] || ROLE_ROADMAP_CONFIG['Guru Mapel'];
+            const roadDef = roleRoadmap[period] || roleRoadmap['T1'];
+            document.getElementById('q-banner-title').textContent = `${roadDef.title} [Peran: ${role}]`;
             document.getElementById('q-banner-phase').textContent = roadDef.phase;
             document.getElementById('q-banner-akred').textContent = "📌 " + roadDef.akred;
             document.getElementById('q-banner-pbd').textContent = "🎯 " + roadDef.pbd;
         }
 
-        function renderInstrumenTab(evalKey, period) {
+        function renderInstrumenTab(evalKey, period, role = 'Guru Mapel') {
             const container = document.getElementById('instrumen-container');
             container.innerHTML = '';
             const evalData = appState.evaluations[evalKey];
 
-            const activeInstrumen = appState.customInstrumen || INSTRUMEN_DATA;
+            // PILIH KUMPULAN INSTRUMEN BERDASARKAN ROLE
+            let activeInstrumen = (appState.customInstrumen && appState.customInstrumen[role]) 
+                ? appState.customInstrumen[role] 
+                : (REGULATED_INSTRUMEN_DATA[role] || REGULATED_INSTRUMEN_DATA['Guru Mapel']);
+
             let countVisibleBlocks = 0;
 
             activeInstrumen.forEach(group => {
@@ -1300,8 +1491,8 @@
                             <table class="w-full text-left text-xs border-collapse">
                                 <thead class="bg-slate-900 text-white font-bold">
                                     <tr>
-                                        <th class="p-2 w-10 text-center">Kode</th>
-                                        <th class="p-2">Indikator Kinerja Guru / Tendik (${period})</th>
+                                        <th class="p-2 w-16 text-center">Kode</th>
+                                        <th class="p-2">Indikator Kinerja [${role}] (${period})</th>
                                         <th class="p-2">Catatan Observasi Kepala Sekolah</th>
                                         <th class="p-2 w-28 text-center">Skor (1-4)</th>
                                     </tr>
@@ -1316,7 +1507,7 @@
                                                 <td class="p-2 indicator-label">${item.label}</td>
                                                 <td class="p-2"><textarea onchange="saveItemNote('${evalKey}', '${item.code}', this.value)" rows="1" placeholder="Catatan bukti observasi..." class="w-full p-1 border rounded bg-white dark:bg-slate-900">${note}</textarea></td>
                                                 <td class="p-2 text-center">
-                                                    <select onchange="saveItemScore('${evalKey}', '${item.code}', this.value)" class="p-1 border rounded font-bold bg-white dark:bg-slate-900">
+                                                    <select onchange="saveItemScore('${evalKey}', '${item.code}', this.value, '${role}')" class="p-1 border rounded font-bold bg-white dark:bg-slate-900">
                                                         <option value="">-</option>
                                                         <option value="1" ${score == '1' ? 'selected' : ''}>1 (Kurang)</option>
                                                         <option value="2" ${score == '2' ? 'selected' : ''}>2 (Cukup)</option>
@@ -1336,16 +1527,19 @@
             });
 
             if (countVisibleBlocks === 0) {
-                container.innerHTML = `<div class="p-4 border rounded text-center text-slate-500 text-xs">Tidak ada indikator spesifik untuk ${getPeriodLabel(period)}. Silakan klik "Tambah Indikator" untuk menambahkan.</div>`;
+                container.innerHTML = `<div class="p-4 border rounded text-center text-slate-500 text-xs">Tidak ada indikator spesifik untuk ${getPeriodLabel(period)} (${role}). Silakan klik "Tambah Indikator" untuk menambahkan.</div>`;
             }
         }
 
         function openModalAddKomponen() {
             const p = appState.pegawaiList.find(x => x.id == appState.currentPegawaiId);
             const activePeriod = p ? (p.period || 'T1') : 'T1';
+            const activeRole = p ? (p.role || 'Guru Mapel') : 'Guru Mapel';
             document.getElementById('modalCompQuarter').value = activePeriod;
+            document.getElementById('modalCompRole').value = activeRole;
             document.getElementById('formKomponen').reset();
             document.getElementById('modalCompQuarter').value = activePeriod;
+            document.getElementById('modalCompRole').value = activeRole;
             document.getElementById('modalKomponen').classList.remove('hidden');
         }
 
@@ -1355,38 +1549,44 @@
 
         function handleSaveKomponen(e) {
             e.preventDefault();
+            const role = document.getElementById('modalCompRole').value;
             const compId = parseInt(document.getElementById('modalCompTarget').value);
             const quarter = document.getElementById('modalCompQuarter').value;
             const code = document.getElementById('modalCompCode').value.trim();
             const label = document.getElementById('modalCompLabel').value.trim();
 
             if (!appState.customInstrumen) {
-                appState.customInstrumen = JSON.parse(JSON.stringify(INSTRUMEN_DATA));
+                appState.customInstrumen = JSON.parse(JSON.stringify(REGULATED_INSTRUMEN_DATA));
             }
 
-            const targetGroup = appState.customInstrumen.find(g => g.id === compId);
+            if (!appState.customInstrumen[role]) {
+                appState.customInstrumen[role] = JSON.parse(JSON.stringify(REGULATED_INSTRUMEN_DATA[role] || REGULATED_INSTRUMEN_DATA['Guru Mapel']));
+            }
+
+            const targetGroup = appState.customInstrumen[role].find(g => g.id === compId);
             if (targetGroup) {
                 targetGroup.subItems.push({ code, label, quarter });
                 saveAllDataToStorage();
 
                 const p = appState.pegawaiList.find(x => x.id == appState.currentPegawaiId);
                 const evalKey = `eval_${p.id}_${p.period || 'T1'}`;
-                renderInstrumenTab(evalKey, p.period || 'T1');
+                renderInstrumenTab(evalKey, p.period || 'T1', p.role || 'Guru Mapel');
 
                 closeModalKomponen();
-                showToast("➕ Indikator Baru Berhasil Ditambahkan!");
+                showToast(`➕ Indikator Baru [${role}] Berhasil Ditambahkan!`);
             }
         }
 
         function saveDriveUrl(evalKey, groupId, val) {
+            const p = appState.pegawaiList.find(x => x.id == appState.currentPegawaiId);
             appState.evaluations[evalKey].driveUrls[groupId] = val;
-            updateAnalytics(evalKey);
+            updateAnalytics(evalKey, p ? p.role : 'Guru Mapel');
             saveAllDataToStorage();
         }
 
-        function saveItemScore(evalKey, code, val) {
+        function saveItemScore(evalKey, code, val, role = 'Guru Mapel') {
             appState.evaluations[evalKey].scores[code] = val;
-            updateAnalytics(evalKey);
+            updateAnalytics(evalKey, role);
             saveAllDataToStorage();
         }
 
@@ -1442,12 +1642,12 @@
                 card.className = 'p-2.5 border rounded bg-slate-50 dark:bg-slate-900 text-xs space-y-2';
                 card.innerHTML = `
                     <div class="flex justify-between items-center font-bold">
-                        <span>Rencana PBD / Kombel #${index + 1}</span>
+                        <span>Rencana PBD / Program Mutu #${index + 1}</span>
                         <button onclick="deletePbdItem('${evalKey}', ${index})" class="text-red-500 hover:text-red-700 no-print">Hapus</button>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
                         <input type="text" value="${item.indikator}" onchange="updatePbdItem('${evalKey}', ${index}, 'indikator', this.value)" placeholder="Indikator Pembenahan PBD" class="p-1 border rounded bg-white dark:bg-slate-800">
-                        <input type="text" value="${item.aksi}" onchange="updatePbdItem('${evalKey}', ${index}, 'aksi', this.value)" placeholder="Aksi Kombel" class="p-1 border rounded bg-white dark:bg-slate-800">
+                        <input type="text" value="${item.aksi}" onchange="updatePbdItem('${evalKey}', ${index}, 'aksi', this.value)" placeholder="Aksi Program" class="p-1 border rounded bg-white dark:bg-slate-800">
                         <input type="text" value="${item.target}" onchange="updatePbdItem('${evalKey}', ${index}, 'target', this.value)" placeholder="Target Ketercapaian" class="p-1 border rounded bg-white dark:bg-slate-800">
                     </div>
                 `;
@@ -1477,13 +1677,15 @@
         function pullPbdToTirta() {
             const p = appState.pegawaiList.find(x => x.id == appState.currentPegawaiId);
             const period = p.period || 'T1';
+            const role = p.role || 'Guru Mapel';
             const evalKey = `eval_${p.id}_${period}`;
             const evalData = appState.evaluations[evalKey];
-            const roadDef = ROADMAP_DEFINITIONS[period];
+            const roleRoadmap = ROLE_ROADMAP_CONFIG[role] || ROLE_ROADMAP_CONFIG['Guru Mapel'];
+            const roadDef = roleRoadmap[period];
 
             if (evalData.pbdItems && evalData.pbdItems.length > 0) {
                 const summaryPbd = evalData.pbdItems.map((item, i) => `${i+1}. Indikator: ${item.indikator} | Aksi: ${item.aksi}`).join("\n");
-                evalData.tirta.i = `[Target Triwulan ${period}]: ${roadDef.pbd}\n\n[Rencana Matriks PBD]:\n${summaryPbd}`;
+                evalData.tirta.i = `[Target ${role} ${period}]: ${roadDef.pbd}\n\n[Rencana Matriks PBD]:\n${summaryPbd}`;
                 renderTirtaTab(evalKey);
                 saveAllDataToStorage();
                 showToast("Data PBD Berhasil Ditarik ke Coaching TIRTA!");
@@ -1528,7 +1730,7 @@
                 div.innerHTML = `
                     <span class="font-bold">Observasi #${index + 1}</span>
                     <input type="text" value="${item.date || '2026-02-15'}" onchange="updateSupervisiLog('${evalKey}', ${index}, 'date', this.value)" class="p-1 border rounded w-full md:w-28 bg-white dark:bg-slate-800">
-                    <input type="text" value="${item.fokus || ''}" onchange="updateSupervisiLog('${evalKey}', ${index}, 'fokus', this.value)" placeholder="Fokus Observasi" class="p-1 border rounded flex-1 bg-white dark:bg-slate-800">
+                    <input type="text" value="${item.fokus || ''}" onchange="updateSupervisiLog('${evalKey}', ${index}, 'fokus', this.value)" placeholder="Fokus Observasi / Layanan" class="p-1 border rounded flex-1 bg-white dark:bg-slate-800">
                     <input type="text" value="${item.catatan || ''}" onchange="updateSupervisiLog('${evalKey}', ${index}, 'catatan', this.value)" placeholder="Catatan Refleksi KS" class="p-1 border rounded flex-1 bg-white dark:bg-slate-800">
                     <button onclick="deleteSupervisiLog('${evalKey}', ${index})" class="text-red-500 font-bold no-print">Hapus</button>
                 `;
@@ -1560,7 +1762,7 @@
             saveAllDataToStorage();
         }
 
-        function updateAnalytics(evalKey) {
+        function updateAnalytics(evalKey, role = 'Guru Mapel') {
             const evalData = appState.evaluations[evalKey];
             let totalScore = 0;
             let scoredCount = 0;
@@ -1581,7 +1783,10 @@
             document.getElementById('stat-skor-label').textContent = skorLabel;
 
             let driveFilled = 0;
-            const activeInstrumen = appState.customInstrumen || INSTRUMEN_DATA;
+            let activeInstrumen = (appState.customInstrumen && appState.customInstrumen[role]) 
+                ? appState.customInstrumen[role] 
+                : (REGULATED_INSTRUMEN_DATA[role] || REGULATED_INSTRUMEN_DATA['Guru Mapel']);
+
             activeInstrumen.forEach(g => {
                 if (evalData.driveUrls[g.id] && evalData.driveUrls[g.id].trim() !== '') driveFilled++;
             });
@@ -1900,11 +2105,11 @@
         }
 
         function saveAllDataToStorage() {
-            localStorage.setItem('MONEV_GURU_2026_INTEGRATED_V8', JSON.stringify(appState));
+            localStorage.setItem('MONEV_GURU_2026_INTEGRATED_V9', JSON.stringify(appState));
         }
 
         function loadFromLocalStorage() {
-            const saved = localStorage.getItem('MONEV_GURU_2026_INTEGRATED_V8');
+            const saved = localStorage.getItem('MONEV_GURU_2026_INTEGRATED_V9');
             if (saved) {
                 try {
                     appState = JSON.parse(saved);
@@ -1939,7 +2144,7 @@
             const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(appState, null, 2));
             const downloadAnchor = document.createElement('a');
             downloadAnchor.setAttribute("href", dataStr);
-            downloadAnchor.setAttribute("download", `Monev_Guru_Tendik_2026_Backup_${new Date().toISOString().slice(0,10)}.json`);
+            downloadAnchor.setAttribute("download", `Monev_Guru_BK_Tendik_2026_Backup_${new Date().toISOString().slice(0,10)}.json`);
             document.body.appendChild(downloadAnchor);
             downloadAnchor.click();
             downloadAnchor.remove();
